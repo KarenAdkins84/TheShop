@@ -18,6 +18,12 @@ Reviews.init(
     description: {
       type: DataTypes.STRING,
     },
+    gift_price: {
+      type: DataTypes.FLOAT
+    },
+    purchase_location: {
+      type: DataTypes.STRING
+    },
     date_created: {
       type: DataTypes.DATE,
       allowNull: false,
