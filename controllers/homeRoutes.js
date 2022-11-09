@@ -4,7 +4,7 @@ const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
-    // Get all reviewss and JOIN with user data
+    // Get all reviews and JOIN with user data
     const reviewsData = await Reviews.findAll({
       include: [
         {
@@ -15,11 +15,11 @@ router.get('/', async (req, res) => {
     });
 
     // Serialize data so the template can read it
-    const reviewss = reviewsData.map((reviews) => reviews.get({ plain: true }));
+    const reviews = reviewsData.map((reviews) => reviews.get({ plain: true }));
 
     // Pass serialized data and session flag into template
     res.render('homepage', { 
-      reviewss, 
+      reviews, 
       logged_in: req.session.logged_in 
     });
   } catch (err) {
