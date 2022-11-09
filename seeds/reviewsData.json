@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Lego Star Wars",
+        "description": "1400 piece set",
+        "gift_price": "150",
+        "purchase_location": "Target"
+    },
+    {
+        "name": "Sweater",
+        "description": "Ugly Christmas sweater",
+        "gift_price": "20",
+        "purchase_location": "Walmart"
+    },
+    {
+        "name": "Tricycle",
+        "description": "toddler toy ride-on",
+        "gift_price": "45",
+        "purchase_location": "Amazon"
+    }
+]
