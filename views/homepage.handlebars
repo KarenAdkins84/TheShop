@@ -2,6 +2,14 @@
 <div class="row mb-4 project">
   <div class="col-md-5">
     <h2>
+        <nav>
+        {{#if logged_in}}
+        <a href="/profile">profile</a> |
+        <button class="no-button" id="logout">logout</button>
+        {{else}}
+        <a href="/login">login</a>
+        {{/if}}
+      </nav>
       <a href="/reviews{{reviews.id}}">{{reviews.name}}</a>
     </h2>
     <p>Created by {{reviews.user.name}} on {{format_date reviews.date_created}}</p>
