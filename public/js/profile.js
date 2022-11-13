@@ -15,7 +15,7 @@ const newFormHandler = async (event) => {
       });
   
       if (response.ok) {
-        document.location.replace('/profile');
+        document.location.replace('/');
       } else {
         alert('Failed to create review');
       }
@@ -42,7 +42,9 @@ const newFormHandler = async (event) => {
     .querySelector('.new-gift-form')
     .addEventListener('submit', newFormHandler);
   
+
   document
     .querySelector('.gift-list')
     .addEventListener('click', delButtonHandler);
+
   
