@@ -1,14 +1,14 @@
 const newFormHandler = async (event) => {
     event.preventDefault();
   
-    const name = document.querySelector('#project-name').value.trim();
-    const needed_funding = document.querySelector('#project-funding').value.trim();
-    const description = document.querySelector('#project-desc').value.trim();
+    const name = document.querySelector('#gift-name').value.trim();
+    const price = document.querySelector('#gift-price').value.trim();
+    const description = document.querySelector('#gift-desc').value.trim();
   
-    if (name && needed_funding && description) {
-      const response = await fetch(`/api/projects`, {
+    if (name && price && description) {
+      const response = await fetch(`/api/reviews`, {
         method: 'POST',
-        body: JSON.stringify({ name, needed_funding, description }),
+        body: JSON.stringify({ name, price, description }),
         headers: {
           'Content-Type': 'application/json',
         },
@@ -17,7 +17,7 @@ const newFormHandler = async (event) => {
       if (response.ok) {
         document.location.replace('/profile');
       } else {
-        alert('Failed to create project');
+        alert('Failed to create review');
       }
     }
   };
@@ -26,23 +26,23 @@ const newFormHandler = async (event) => {
     if (event.target.hasAttribute('data-id')) {
       const id = event.target.getAttribute('data-id');
   
-      const response = await fetch(`/api/projects/${id}`, {
+      const response = await fetch(`/api/reviews/${id}`, {
         method: 'DELETE',
       });
   
       if (response.ok) {
         document.location.replace('/profile');
       } else {
-        alert('Failed to delete project');
+        alert('Failed to delete review');
       }
     }
   };
   
   document
-    .querySelector('.new-project-form')
+    .querySelector('.new-gift-form')
     .addEventListener('submit', newFormHandler);
   
   document
-    .querySelector('.project-list')
+    .querySelector('.gift-list')
     .addEventListener('click', delButtonHandler);
   
