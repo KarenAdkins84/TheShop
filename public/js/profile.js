@@ -17,7 +17,7 @@ const newFormHandler = async (event) => {
       if (response.ok) {
         document.location.replace('/');
       } else {
-        alert('Failed to create project');
+        alert('Failed to create review');
       }
     }
   };
@@ -26,7 +26,7 @@ const newFormHandler = async (event) => {
     if (event.target.hasAttribute('data-id')) {
       const id = event.target.getAttribute('data-id');
   
-      const response = await fetch(`/api/projects/${id}`, {
+      const response = await fetch(`/api/reviews/${id}`, {
         method: 'DELETE',
       });
   
@@ -42,7 +42,9 @@ const newFormHandler = async (event) => {
     .querySelector('.new-gift-form')
     .addEventListener('submit', newFormHandler);
   
-  // document
-  //   .querySelector('.gift-list')
-  //   .addEventListener('click', delButtonHandler);
+
+  document
+    .querySelector('.gift-list')
+    .addEventListener('click', delButtonHandler);
+
   
