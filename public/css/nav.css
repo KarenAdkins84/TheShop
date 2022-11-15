@@ -88,9 +88,9 @@ button {
   }
   
   span.gradient {
-    background: #f857a8;
-    background: -webkit-linear-gradient(45deg, #f857a8, #ff5858);
-    background: linear-gradient(45deg, #f857a8, #ff5858);
+    background: #6d44b8;
+    background: -webkit-linear-gradient(45deg, #a38cce, #553591);
+    background: linear-gradient(45deg, #a38cce, #553591);
     padding: 0 1em;
     position: relative;
     right: 1em;
@@ -123,7 +123,7 @@ button {
   
   a:link, a:visited, a:active {
     text-decoration: none;
-    color: #f857a8;
+    color: #a38cce;
   }
   
   a:hover {
@@ -137,7 +137,7 @@ button {
   }
   
   .btn-nav {
-    color: #f857a8;
+    color: #a38cce;
     padding-left: 2em;
     padding-right: 2em;
   }
@@ -170,9 +170,9 @@ button {
     }
   
     .nav a:link.active, a:visited.active, a:active.active {
-      background: #f857a8;
-      background: -webkit-linear-gradient(45deg, #f857a8, #ff5858);
-      background: linear-gradient(45deg, #f857a8, #ff5858);
+      background: #a38cce;
+      background: -webkit-linear-gradient(45deg, #a38cce, #553591);
+      background: linear-gradient(45deg, #a38cce, #553591);
       color: #fff;
     }
   
