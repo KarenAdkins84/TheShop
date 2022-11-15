@@ -1,8 +1,13 @@
 .mainheader {
     text-align: center;
-    font-size: large;
+    font-size: 45px;
+	font-family: 'Jost', sans-serif;
+	color:  #aba6d5;
     font-weight: bold;
 
+}
+a {
+	color: #6d44b8;
 }
 
 body{
@@ -13,6 +18,7 @@ body{
 	align-items: center;
 	min-height: 100vh;
 	font-family: 'Jost', sans-serif;
+	color: #e0dede;
 	background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
 }
 .main{
