@@ -1,3 +1,6 @@
+document.getElementById('nav-profile').style.backgroundColor = '#008080';
+document.getElementById('nav-profile').style.color = 'white';
+
 const newFormHandler = async (event) => {
     event.preventDefault();
   
