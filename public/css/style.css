@@ -116,7 +116,7 @@ button:hover{
 }
 
 /* login page style */
-div.login {
+div.login, div.signup {
 	font-family: 'Inknut Antiqua', 'Times New Roman', Times, serif;
 }
 
