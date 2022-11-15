@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>the shop</title>
-    <link rel="stylesheet" href="../../public/css/jass.css">
-    <link rel="stylesheet" href="../../public/css/style.css">
+    <title>ReGifter</title>
+    <link rel="stylesheet" href="/css/jass.css">
+    <link rel="stylesheet" href="/css/style.css">
+
 </head>
 
 <body>
-    <div class="flex-column justify-space-around">
-    <header class="display-flex justify-space-between align-center p-2">
-      <h1 class="mainheader">The Shop!</h1>
-    
-    </header>
+  <div class="flex-column justify-space-around">
+
+  <nav class="nav nav-pills nav-justified">
+    <a class="nav-item nav-link active" href="#">Active</a>
+    <a class="nav-item nav-link" href="#">Link</a>
+    <a class="nav-item nav-link" href="/login">logout</a>
+    <a class="nav-item nav-link disabled" href="#">Disabled</a>
+  </nav>
+  
+
     <main class="container container-fluid mt-5">
       <!-- Render the sub layout -->
       {{{ body }}}
     </main>
+
     <footer>
       {{!-- footer? --}}
     </footer>
-    </div>
 
-    {{#if logged_in}}
-    <script src="../../public/css/js/logout.js"></script>
-    {{/if}}
+  </div>
+
 </body>
+
+
+<script src="/js/logout.js"></script>
+
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </html>
