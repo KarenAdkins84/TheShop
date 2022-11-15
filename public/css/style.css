@@ -101,6 +101,8 @@ button:hover{
 .login label{
 	color: #573b8a;
 	transform: scale(.6);
+	position: relative;
+	top: 15px;
 }
 
 #chk:checked ~ .login{
@@ -119,12 +121,23 @@ div.login {
 }
 
 /* style for review divs */
-div.review {
-	border: 2px solid #008080;
+div.review, div.AboutUs {
 	border-radius: 20px;
-	box-shadow: 2px 2px 50px #008080;
+	box-shadow: 2px 2px 30px #008080;
 	padding: 20px;
 	background-color: #6d44b86f;
+}
+
+div.AboutUs {
+	margin: -200px 0;
+}
+
+div.AboutUs h1 {
+	text-align: center;
+}
+
+div.AboutUs h2 {
+	text-align: left;
 }
 
 div.review:nth-child(odd) {
