@@ -9,9 +9,11 @@
 
 {{#each reviews as |reviews| }}
 <div class="row mb-4 project">
-  <div class="col-md-5">
+  <div class="col-md-5" >
+   
     <h2>
-      <a href="/reviews{{reviews.id}}">{{reviews.name}}</a>
+      
+      {{reviews.name}}
     </h2>
     <p>Created by {{reviews.user.name}} on {{format_date reviews.date_created}}</p>
   </div>
@@ -22,3 +24,7 @@
   </div>
 </div>
 {{/each}}
+
+<script>
+  AOS.init();
+</script>
