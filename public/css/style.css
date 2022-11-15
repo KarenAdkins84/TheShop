@@ -124,6 +124,7 @@ div.review {
 	border-radius: 20px;
 	box-shadow: 2px 2px 50px #008080;
 	padding: 20px;
+	background-color: #6d44b86f;
 }
 
 div.review:nth-child(odd) {
