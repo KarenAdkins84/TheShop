@@ -121,7 +121,10 @@ div.login {
 }
 
 /* style for review divs */
-div.review, div.AboutUs {
+div.review {
+	width: 300px;
+	height: auto;
+	margin: 25px;
 	border-radius: 20px;
 	box-shadow: 2px 2px 30px #008080;
 	padding: 20px;
@@ -130,6 +133,10 @@ div.review, div.AboutUs {
 
 div.AboutUs {
 	margin: -200px 0;
+	border-radius: 20px;
+	box-shadow: 2px 2px 30px #008080;
+	padding: 20px;
+	background-color: #6d44b86f;
 }
 
 div.AboutUs h1 {
