@@ -89,8 +89,8 @@ button {
   
   span.gradient {
     background: #6d44b8;
-    background: -webkit-linear-gradient(45deg, #a38cce, #553591);
-    background: linear-gradient(45deg, #a38cce, #553591);
+    background: -webkit-linear-gradient(45deg, #017e7e50, #008080);
+    background: linear-gradient(45deg, #017e7e50, #008080);
     padding: 0 1em;
     position: relative;
     right: 1em;
