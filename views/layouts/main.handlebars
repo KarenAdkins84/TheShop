@@ -2,26 +2,31 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReGifter</title>
     <link rel="stylesheet" href="/css/jass.css">
+    <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/css/style.css">
-
 </head>
 
 <body>
+  <header id="nav-wrapper">
+    <nav id="nav">
+      <div class="nav left">
+        <span class="gradient skew"><h1 class="logo un-skew">ReGifter</h1></span>
+        <button id="menu" class="btn-nav"><span class="fas fa-bars"></span></button>
+      </div>
+      <div class="nav right">
+        <a href="/" class="nav-link active"><span class="nav-link-span"><span class="u-nav">Home</span></span></a>
+        <a href="/about" class="nav-link"><span class="nav-link-span"><span class="u-nav">About</span></span></a>
+        <a href="/profile" class="nav-link"><span class="nav-link-span"><span class="u-nav">Profile</span></span></a>
+        <a href="/login" class="nav-link"><span class="nav-link-span"><span class="u-nav">Login</span></span></a>
+      </div>
+    </nav>
+  </header>
   <div class="flex-column justify-space-around">
-
-  <nav class="nav nav-pills nav-justified">
-    <a class="nav-item nav-link active" href="#">Active</a>
-    <a class="nav-item nav-link" href="#">Link</a>
-    <a class="nav-item nav-link" href="/login">logout</a>
-    <a class="nav-item nav-link disabled" href="#">Disabled</a>
-  </nav>
-  
 
     <main class="container container-fluid mt-5">
       <!-- Render the sub layout -->
@@ -36,10 +41,6 @@
 
 </body>
 
-
-<script src="/js/logout.js"></script>
-
-
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="jquery-3.6.0.min.js"></script>
 
 </html>
