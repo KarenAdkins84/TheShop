@@ -1,14 +1,2 @@
-const homepage = async () => {
-    const response = await fetch('', {
-      method: 'GET',
-      headers: { 'Content-Type': 'application/json' },
-    });
-  
-    if (response.ok) {
-      document.location.replace('/homepage');
-    } else {
-      alert(response.statusText);
-    }
-  };
-  
-  
+document.getElementById('nav-home').style.backgroundColor = '#008080';
+document.getElementById('nav-home').style.color = 'white';
