@@ -1,3 +1,6 @@
+document.getElementById('nav-login').style.backgroundColor = '#008080';
+document.getElementById('nav-login').style.color = 'white';
+
 const loginFormHandler = async (event) => {
     event.preventDefault();
   
