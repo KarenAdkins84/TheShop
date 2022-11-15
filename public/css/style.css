@@ -1,30 +1,26 @@
-.mainheader {
-    text-align: center;
-    font-size: 45px;
-	font-family: 'Jost', sans-serif;
-	color:  #aba6d5;
-    font-weight: bold;
-
+/* fonts */
+div.nav.right, div.nav.left {
+	font-family: 'Inknut Antiqua', 'Times New Roman', Times, serif;
 }
+
 a {
 	color: #6d44b8;
 }
 
-body{
+body {
 	margin: 0;
-	padding: 20px;
+	padding: 80px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	font-family: 'Jost', sans-serif;
 	color: #e0dede;
 	background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+	font-family: 'Open Sans', 'Roboto', sans-serif;
 }
 .main{
 	width: 350px;
 	height: 500px;
-	background: red;
 	overflow: hidden;
 	background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
 	border-radius: 10px;
@@ -115,4 +111,25 @@ button:hover{
 }
 #chk:checked ~ .signup label{
 	transform: scale(.6);
+}
+
+/* login page style */
+div.login {
+	font-family: 'Inknut Antiqua', 'Times New Roman', Times, serif;
+}
+
+/* style for review divs */
+div.review {
+	box-shadow: 2px 2px 20px black;
+	padding: 20px;
+}
+
+div.review:nth-child(odd) {
+	position: relative;
+	right: 75%;
+}
+
+div.review:nth-child(even) {
+	position: relative;
+	left: 75%;
 }
