@@ -43,8 +43,8 @@ const newFormHandler = async (event) => {
     .addEventListener('submit', newFormHandler);
   
 
-  document
-    .querySelector('.gift-list')
-    .addEventListener('click', delButtonHandler);
+  // document
+  //   .querySelector('.gift-list')
+  //   .addEventListener('click', delButtonHandler);
 
   

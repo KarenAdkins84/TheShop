@@ -6,20 +6,20 @@
 
 <div class="row mt-4">
   <div class="col-md-6">
-    <h3>Give your gift reviews!</h3>
+    <h2>Give your gift reviews!</h2>
 
     <form class="form new-gift-form">
       <div class="form-group">
-        <label for="gift-name">gift name:</label>
+        <label for="gift-name">Gift Name:</label>
         <input class="form-input" type="text" id="gift-name" name="gift-name" />
       </div>
       <div class="form-group">
-        <label for="gift-price">gift price ($):</label>
+        <label for="gift-price">Gift Price ($):</label>
         <input class="form-input" type="text" id="gift-price" name="gift-price" />
       </div>
       <div class="form-group">
-        <label for="gift-desc">description:</label>
-        <textarea class="form-input" id="gift-desc" name="gift-desc"></textarea>
+        <label for="gift-desc">Description:</label>
+        <textarea class="form-input" type="text" id="gift-desc" name="gift-desc"></textarea>
       </div>
       <div class="form-group">
         <button type="submit" class="btn btn-primary">Create</button>
@@ -27,22 +27,27 @@
     </form>
   </div>
 
-  {{#if reviews.length}}
-  <div class="col-md-6 gift-list">
-    <h3>Current Reviews:</h3>
-<--!! are these labeled right?
-    {{#each reviews as |reviews|}}
-    <div class="row mb-2">
-      <div class="col-md-8">
-        <h4><a href="/gift/{{gift.id}}">{{gift.name}}</a></h4>
-      </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{gift.id}}">DELETE</button>
-      </div>
+
+
+
+
+  
+
+  {{#each reviews as |reviews| }}
+  <div class="row mb-4 project">
+    <div class="col-md-5">
+      <h2> {{reviews.name}} </h2>
+      <p>Created by {{reviews.user.name}} on {{format_date reviews.date_created}}</p>
     </div>
-    {{/each}}
+    <div class="col-md-7">
+      <p>
+        {{reviews.description}}
+      </p>
+    </div>
   </div>
-  {{/if}}
+  {{/each}}
+
+
 </div>
 
 <script src="/js/profile.js"></script>
