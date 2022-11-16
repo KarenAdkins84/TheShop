@@ -5,6 +5,11 @@
 
   <div class="col-md-5">
     <h2> {{reviews.name}} </h2>
+  <div class="col-md-7" style="text-align: center; margin-top: -5px;">
+    <p>
+      ${{reviews.gift_price}}
+    </p>
+  </div>
 
     <p>Created by {{reviews.user.name}} on {{format_date reviews.date_created}}</p>
   </div>
@@ -12,6 +17,11 @@
     <p>
       {{reviews.description}}
     </p>
+  </div>
+  <div class="col-md-7">
+    <a href="#"> 
+      {{reviews.purchase_location}} 
+    </a>
   </div>
 </div>
 {{/each}}
