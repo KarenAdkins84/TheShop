@@ -5,12 +5,13 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js",
+    "devstart": "nodemon server.js",
+    "start": "node server.js",
     "seed": "node seeds/seeds.js"
   },
   "dependencies": {
     "aos": "^2.3.4",
-    "bcrypt": "^5.1.0",
+    "bcrypt": "^4.0.1",
     "bootstrap": "^5.2.2",
     "connect-session-sequelize": "^7.1.5",
     "dotenv": "^16.0.3",
@@ -22,5 +23,8 @@
     "normalize.css": "^8.0.1",
     "pixi.js": "^7.0.4",
     "sequelize": "^6.25.3"
-  }
+  },"engines":{
+    "node":"14.18.1"
+    }
+    
 }
